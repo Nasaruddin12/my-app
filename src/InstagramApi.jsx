@@ -37,8 +37,8 @@ const InstagramApi = () => {
         const code = query.get('code');
         console.log(code)
 
-        if (true) {
-            fetchAccessToken("AQCx4UWRSxFcryI_g8qyHtXaupjoWKmTzMx4ti98DdZ0i5zMhrSEFoQnqHwzyI2sURoY73Xhfc1cAzHEL2tmbPlPCfigUaVSdH2BA-ZMcubJloPULRMgxwx4f17jBuHvGpUbrCvQmfhxnNnpDJL7rQy87cKaaOObiQi_iVKYPcIc50g_MLgz5JGZ4uxeaCtGpty9FJXEXwenAkVYgb8vpglk5yNykTd1xwxPhY5y6z3ECA");
+        if (code) {
+            fetchAccessToken(code);
         }
     }, [location.search]);
 
